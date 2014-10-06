@@ -1,0 +1,20 @@
+{
+  "name": "thunderplains-prototype-demo",
+  "version": "0.0.0",
+  "description": "Demonstration of a prototype node app compared to PHP",
+  "main": "index.js",
+  "scripts": {
+    "test": "node load-test.js"
+  },
+  "author": "Jordan Rousseau",
+  "license": "MIT",
+  "dependencies": {
+    "bookshelf": "^0.7.7",
+    "hapi": "^6.9.0",
+    "joi": "^4.7.0",
+    "knex": "^0.6.22",
+    "loadtest": "^1.2.2",
+    "lout": "^5.1.1",
+    "sqlite3": "^3.0.0"
+  }
+}
