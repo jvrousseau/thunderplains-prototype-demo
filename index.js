@@ -1,5 +1,5 @@
 var hapi = require('hapi'),
-    server = new hapi.Server('localhost', 2525),
+    server = new hapi.Server('0.0.0.0', 2525),
     view = require('./view');
 
 server.pack.register(require('./utils/hapi-plugins/hapi-promise'), function () {
