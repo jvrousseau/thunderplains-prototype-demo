@@ -1,6 +1,6 @@
 var loadtest = require('loadtest');
 var options = {
-    url: 'http://localhost:2525/employee/2/task',
+    url: 'http://jrousseau.norman.wdtinc.com:8080/employee/2/task',
     maxRequests: 10000,
     concurrency: 70
 };
