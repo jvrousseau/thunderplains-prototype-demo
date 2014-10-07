@@ -7,5 +7,14 @@ module.exports = {
         connection: {
             filename: './prototype.sqlite3'
         }
+    },
+    staging: {
+        client: 'mysql',
+        connection: {
+          database: 'prototype',
+          user:     'user',
+          password: 'temp50',
+          host: 'localhost'
+        }
     }
 };

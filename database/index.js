@@ -5,6 +5,22 @@ var knex = require('knex')({
     filename: "./database/prototype.sqlite3"
   }
 });
+
+/*var knex = require('knex')({
+    client: 'mysql',
+    debug: false,
+    connection: {
+      database: 'prototype',
+      user:     'user',
+      password: 'temp50',
+      host: 'localhost'
+  },
+  pool: {
+    min: 0,
+    max: 10
+  }
+});*/
+
 var bookshelf = require('bookshelf')(knex);
 bookshelf.plugin('registry');
 
