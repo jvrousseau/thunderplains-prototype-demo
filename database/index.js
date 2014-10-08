@@ -1,4 +1,4 @@
-/*var path = require('path'),
+var path = require('path'),
     database_filename = path.normalize(__dirname + '/prototype.sqlite3');
     knex = require('knex')({
   client: 'sqlite3',
@@ -6,9 +6,9 @@
   connection: {
     filename: database_filename
   }
-});*/
+});
 
-var knex = require('knex')({
+/*var knex = require('knex')({
     client: 'mysql',
     debug: false,
     connection: {
@@ -17,7 +17,7 @@ var knex = require('knex')({
       password: 'temp50',
       host: 'localhost'
   }
-});
+});*/
 
 var bookshelf = require('bookshelf')(knex);
 bookshelf.plugin('registry');
